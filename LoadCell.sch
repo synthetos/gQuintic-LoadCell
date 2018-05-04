@@ -37,10 +37,10 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
-Title "LoadCell Amplifier Circuit"
-Date "24-Apr-2018"
-Rev "revB"
-Comp "Ten Mile Square"
+Title "gQuintic LoadCell Adapter"
+Date "4-May-2018"
+Rev "revA"
+Comp "Synthetos"
 Comment1 ""
 Comment2 ""
 Comment3 ""
