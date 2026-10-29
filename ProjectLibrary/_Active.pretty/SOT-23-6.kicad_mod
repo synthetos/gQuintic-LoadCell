@@ -1,27 +1,154 @@
-(module SOT-23-6 (layer F.Cu) (tedit 59FF5BC4)
-  (descr "6-pin SOT-23 package")
-  (tags SOT-23-6)
-  (attr smd)
-  (fp_text reference REF** (at 0.05 -0.24 90) (layer F.SilkS)
-    (effects (font (size 0.4 0.4) (thickness 0.07)))
-  )
-  (fp_text value SOT-23-6 (at 0 2.04) (layer F.Fab) hide
-    (effects (font (size 0.5 0.5) (thickness 0.07)))
-  )
-  (fp_circle (center -0.4 -1.7) (end -0.3 -1.7) (layer F.SilkS) (width 0.15))
-  (fp_line (start 0.25 -1.45) (end -0.25 -1.45) (layer F.SilkS) (width 0.15))
-  (fp_line (start 0.25 1.45) (end 0.25 -1.45) (layer F.SilkS) (width 0.15))
-  (fp_line (start -0.25 1.45) (end 0.25 1.45) (layer F.SilkS) (width 0.15))
-  (fp_line (start -0.25 -1.45) (end -0.25 1.45) (layer F.SilkS) (width 0.15))
-  (pad 1 smd rect (at -1.1 -0.95) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at -1.1 0) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask))
-  (pad 3 smd rect (at -1.1 0.95) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask))
-  (pad 4 smd rect (at 1.1 0.95) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask))
-  (pad 6 smd rect (at 1.1 -0.95) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask))
-  (pad 5 smd rect (at 1.1 0) (size 1.06 0.65) (layers F.Cu F.Paste F.Mask))
-  (model TO_SOT_Packages_SMD.3dshapes/SOT-23-6.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "SOT-23-6"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "6-pin SOT-23 package")
+	(tags "SOT-23-6")
+	(property "Reference" "REF**"
+		(at 0.05 -0.24 90)
+		(layer "F.SilkS")
+		(uuid "1ead4a21-00d8-450f-a1b8-482ef9dffc20")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.07)
+			)
+		)
+	)
+	(property "Value" "SOT-23-6"
+		(at 0 2.04 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0041110e-5983-4138-8ef6-5b46ca030509")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.07)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a26bd216-6a66-445a-8f9d-84ef43c2c29d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80bf09cd-165b-49f5-805f-e2b0304475a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.25 -1.45)
+		(end -0.25 1.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ec748e3-3503-4c4e-bd13-358e60574bea")
+	)
+	(fp_line
+		(start -0.25 1.45)
+		(end 0.25 1.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "762ff54a-5af9-4131-b071-00932591c6b0")
+	)
+	(fp_line
+		(start 0.25 -1.45)
+		(end -0.25 -1.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "28679763-6933-4026-870b-4f1b55c7e355")
+	)
+	(fp_line
+		(start 0.25 1.45)
+		(end 0.25 -1.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3f3a0131-0a59-4918-8121-57176f8f3f01")
+	)
+	(fp_circle
+		(center -0.4 -1.7)
+		(end -0.3 -1.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f73ad7be-3732-436d-9128-be6c537e1f0b")
+	)
+	(pad "1" smd rect
+		(at -1.1 -0.95)
+		(size 1.06 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f57e3a02-4b75-468d-9b6e-dd925ad567fe")
+	)
+	(pad "2" smd rect
+		(at -1.1 0)
+		(size 1.06 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a3e39ceb-f26c-46c1-b0e8-34a8f3b64003")
+	)
+	(pad "3" smd rect
+		(at -1.1 0.95)
+		(size 1.06 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "86185245-b0cf-42db-9062-f786dd4e59f7")
+	)
+	(pad "4" smd rect
+		(at 1.1 0.95)
+		(size 1.06 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bdcd767d-a817-471f-a760-23f92da3664d")
+	)
+	(pad "5" smd rect
+		(at 1.1 0)
+		(size 1.06 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "57534487-df6b-43f7-9066-6e75ec2f793a")
+	)
+	(pad "6" smd rect
+		(at 1.1 -0.95)
+		(size 1.06 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "74312225-95f1-485e-81a3-680527f39c7d")
+	)
+	(embedded_fonts no)
+	(model "TO_SOT_Packages_SMD.3dshapes/SOT-23-6.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

@@ -1,11 +1,64 @@
-(module Mousebite__0.020 (layer F.Cu) (tedit 5A896CE2)
-  (descr "Mounting Hole 3.2mm, no annular, M3")
-  (tags "mounting hole 3.2mm no annular m3")
-  (fp_text reference mb** (at 0.33 -1.82) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value Mousebite_0.020 (at 0.01 2.03) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (pad "" np_thru_hole circle (at 0 0) (size 0.635 0.635) (drill 0.508) (layers *.Cu *.Mask F.SilkS))
+(footprint "Mousebite__0.020"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mounting Hole 3.2mm, no annular, M3")
+	(tags "mounting hole 3.2mm no annular m3")
+	(property "Reference" "mb**"
+		(at 0.33 -1.82 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e91ec121-b602-4a85-8367-1845750d71ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Mousebite_0.020"
+		(at 0.01 2.03 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c57c0ac6-1f72-419f-a805-824ff3063727")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47df0978-7fc8-4433-ac8b-9d528f75a089")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fbd8e08e-cc83-4300-92c8-9a6784360123")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 0.635 0.635)
+		(drill 0.508)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(uuid "7e0f422d-7efa-48db-b45b-e9d6051be995")
+	)
+	(embedded_fonts no)
 )

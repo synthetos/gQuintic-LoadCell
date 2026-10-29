@@ -1,24 +1,138 @@
-(module C_0805 (layer F.Cu) (tedit 59FF4AB7)
-  (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
-  (tags "capacitor 0805")
-  (attr smd)
-  (fp_text reference REF** (at 0.19 -1.49) (layer F.SilkS)
-    (effects (font (size 0.4 0.4) (thickness 0.07)))
-  )
-  (fp_text value C_0805 (at 0 2.1) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start -1.8 -1) (end 1.8 -1) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1.8 1) (end 1.8 1) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1.8 -1) (end -1.8 1) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 1.8 -1) (end 1.8 1) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 0.5 -0.85) (end -0.5 -0.85) (layer F.SilkS) (width 0.15))
-  (fp_line (start -0.5 0.85) (end 0.5 0.85) (layer F.SilkS) (width 0.15))
-  (pad 1 smd rect (at -1 0) (size 1 1.25) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 1 0) (size 1 1.25) (layers F.Cu F.Paste F.Mask))
-  (model Capacitors_SMD.3dshapes/C_0805.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "C_0805"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
+	(tags "capacitor 0805")
+	(property "Reference" "REF**"
+		(at 0.19 -1.49 0)
+		(layer "F.SilkS")
+		(uuid "2ecf90ec-2840-414b-bdfd-0dfe1e306e8e")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.07)
+			)
+		)
+	)
+	(property "Value" "C_0805"
+		(at 0 2.1 0)
+		(layer "F.Fab")
+		(uuid "e1e303f9-5182-442d-89ab-a219a7a9f5f1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df765796-97b2-49ea-9eb1-23b5da735ac8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "51b6d9c2-e257-40cb-b6c7-12507b560ba3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.5 0.85)
+		(end 0.5 0.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "744e0307-acaf-4943-96e1-41b97221b5bf")
+	)
+	(fp_line
+		(start 0.5 -0.85)
+		(end -0.5 -0.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0b594c3a-c8cd-4507-86d9-3de8576f090d")
+	)
+	(fp_line
+		(start -1.8 -1)
+		(end -1.8 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "854f554f-ab0e-44cd-9371-64fe839ae9c4")
+	)
+	(fp_line
+		(start -1.8 -1)
+		(end 1.8 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c9b0215f-f8b4-43c0-9fcc-e48a5895afba")
+	)
+	(fp_line
+		(start -1.8 1)
+		(end 1.8 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "98bba1c3-8794-4f95-adfe-9c8f1fabfa8b")
+	)
+	(fp_line
+		(start 1.8 -1)
+		(end 1.8 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3bf223dc-b512-4e90-a0ff-03d525f54cb7")
+	)
+	(pad "1" smd rect
+		(at -1 0)
+		(size 1 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cfa3f0b9-a4ce-4dfb-a97a-706cdb4c13da")
+	)
+	(pad "2" smd rect
+		(at 1 0)
+		(size 1 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "67d1e4e2-222c-472e-9cc1-952c1d442724")
+	)
+	(embedded_fonts no)
+	(model "Capacitors_SMD.3dshapes/C_0805.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

@@ -1,23 +1,125 @@
-(module D-Pak_TO252AA (layer F.Cu) (tedit 5794D84E)
-  (descr "D-Pak, TO252AA, Diode")
-  (tags "D-Pak TO252AA Diode")
-  (attr smd)
-  (fp_text reference REF** (at 0 -7.5) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value D-Pak_TO252AA (at 0 8.1) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start -3.65 -5.95) (end 3.65 -5.95) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 3.65 -5.95) (end 3.65 5.95) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 3.65 5.95) (end -3.65 5.95) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -3.65 5.95) (end -3.65 -5.95) (layer F.CrtYd) (width 0.05))
-  (pad 3 smd rect (at 2.18 4.3) (size 1.55 2.78) (layers F.Cu F.Paste F.Mask))
-  (pad 4 smd rect (at 0 -2.335) (size 6.74 6.73) (layers F.Cu F.Paste F.Mask))
-  (pad 1 smd rect (at -2.18 4.3) (size 1.55 2.78) (layers F.Cu F.Paste F.Mask))
-  (model Diodes_SMD.3dshapes/D-Pak_TO252AA.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 0.3937 0.3937 0.3937))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "D-Pak_TO252AA"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "D-Pak, TO252AA, Diode")
+	(tags "D-Pak TO252AA Diode")
+	(property "Reference" "REF**"
+		(at 0 -7.5 0)
+		(layer "F.SilkS")
+		(uuid "e40918bf-1bb8-47dc-8be1-165c2677ed6f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D-Pak_TO252AA"
+		(at 0 8.1 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2dc49caf-978e-4a2a-913b-34cc6b8f527f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8396dcc7-c51f-421d-825c-87ce41542536")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "be16cc9e-401b-42bc-9098-044a07a1f0b5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.65 -5.95)
+		(end 3.65 -5.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "47c9d3c1-1094-4785-98a1-d7ec10e66bf2")
+	)
+	(fp_line
+		(start -3.65 5.95)
+		(end -3.65 -5.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9fe876e0-eba3-409c-b30e-88c1687e598c")
+	)
+	(fp_line
+		(start 3.65 -5.95)
+		(end 3.65 5.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8aded792-9bea-4b83-9ad4-6fd5261776b1")
+	)
+	(fp_line
+		(start 3.65 5.95)
+		(end -3.65 5.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e07a3f19-7c79-4163-bf6d-4940df81708e")
+	)
+	(pad "1" smd rect
+		(at -2.18 4.3)
+		(size 1.55 2.78)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d9060ef0-b6ca-4681-aaca-d111f016d662")
+	)
+	(pad "3" smd rect
+		(at 2.18 4.3)
+		(size 1.55 2.78)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "432c0262-beb3-497f-8f86-165cf7017a79")
+	)
+	(pad "4" smd rect
+		(at 0 -2.335)
+		(size 6.74 6.73)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d69806cc-9fdf-46a3-b1f0-ea01ee66b517")
+	)
+	(embedded_fonts no)
+	(model "Diodes_SMD.3dshapes/D-Pak_TO252AA.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.3937 0.3937 0.3937)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

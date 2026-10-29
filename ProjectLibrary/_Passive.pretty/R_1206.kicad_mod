@@ -1,24 +1,139 @@
-(module R_1206 (layer F.Cu) (tedit 59FF4C49)
-  (descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
-  (tags "resistor 1206")
-  (attr smd)
-  (fp_text reference REF** (at -2.9 0) (layer F.SilkS)
-    (effects (font (size 0.4 0.4) (thickness 0.07)))
-  )
-  (fp_text value R_1206 (at 0 1.7) (layer F.Fab) hide
-    (effects (font (size 0.508 0.508) (thickness 0.0762)))
-  )
-  (fp_line (start -2.2 -1.2) (end 2.2 -1.2) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -2.2 1.2) (end 2.2 1.2) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -2.2 -1.2) (end -2.2 1.2) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 2.2 -1.2) (end 2.2 1.2) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 1 1.075) (end -1 1.075) (layer F.SilkS) (width 0.15))
-  (fp_line (start -1 -1.075) (end 1 -1.075) (layer F.SilkS) (width 0.15))
-  (pad 1 smd rect (at -1.45 0) (size 0.9 1.7) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 1.45 0) (size 0.9 1.7) (layers F.Cu F.Paste F.Mask))
-  (model Resistors_SMD.3dshapes/R_1206.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "R_1206"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Resistor SMD 1206, reflow soldering, Vishay (see dcrcw.pdf)")
+	(tags "resistor 1206")
+	(property "Reference" "REF**"
+		(at -2.9 0 0)
+		(layer "F.SilkS")
+		(uuid "c42083c2-95b8-4e7c-9b57-e93653607412")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.07)
+			)
+		)
+	)
+	(property "Value" "R_1206"
+		(at 0 1.7 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3af1dc47-9e80-437a-a0b0-06e5c63bc55e")
+		(effects
+			(font
+				(size 0.508 0.508)
+				(thickness 0.0762)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2f0cd692-a920-4f3a-8652-7314e2ca2e56")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ec1d905-5966-414e-b348-6cda4c17e16d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1 -1.075)
+		(end 1 -1.075)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a75a85e4-747d-48c3-9d42-e57d707d1062")
+	)
+	(fp_line
+		(start 1 1.075)
+		(end -1 1.075)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f9be648d-ec17-4740-9350-75acb83100b0")
+	)
+	(fp_line
+		(start -2.2 -1.2)
+		(end -2.2 1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5cdfdb4f-83d3-49e9-bc8d-bc86f9ed1442")
+	)
+	(fp_line
+		(start -2.2 -1.2)
+		(end 2.2 -1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2946947d-4124-49d2-a34e-0c77c12b2927")
+	)
+	(fp_line
+		(start -2.2 1.2)
+		(end 2.2 1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e39e3cbe-86c0-48b4-bd88-88d7150e4adb")
+	)
+	(fp_line
+		(start 2.2 -1.2)
+		(end 2.2 1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "60e4858d-18ea-4cf7-a4c0-304ba2307dc0")
+	)
+	(pad "1" smd rect
+		(at -1.45 0)
+		(size 0.9 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bfe6a58f-e77b-4591-a0c2-8b4d133d772e")
+	)
+	(pad "2" smd rect
+		(at 1.45 0)
+		(size 0.9 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e3b22b03-664c-4499-83f4-338a486853b2")
+	)
+	(embedded_fonts no)
+	(model "Resistors_SMD.3dshapes/R_1206.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

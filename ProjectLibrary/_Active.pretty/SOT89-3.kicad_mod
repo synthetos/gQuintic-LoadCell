@@ -1,28 +1,168 @@
-(module SOT89-3 (layer F.Cu) (tedit 5794CF59)
-  (descr "SOT89-3, Housing,")
-  (tags "SOT89-3, Housing,")
-  (attr smd)
-  (fp_text reference REF** (at -0.09906 -4.24942) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value AZ1117CH-3.3TRG1 (at -0.20066 4.59994) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start -1.89992 0.20066) (end -1.651 -0.09906) (layer F.SilkS) (width 0.15))
-  (fp_line (start -1.651 -0.09906) (end -1.5494 -0.24892) (layer F.SilkS) (width 0.15))
-  (fp_line (start -1.5494 -0.24892) (end -1.5494 0.59944) (layer F.SilkS) (width 0.15))
-  (fp_line (start -2.25044 -1.30048) (end -2.25044 0.50038) (layer F.SilkS) (width 0.15))
-  (fp_line (start -2.25044 -1.30048) (end -1.6002 -1.30048) (layer F.SilkS) (width 0.15))
-  (fp_line (start 2.25044 -1.30048) (end 2.25044 0.50038) (layer F.SilkS) (width 0.15))
-  (fp_line (start 2.25044 -1.30048) (end 1.6002 -1.30048) (layer F.SilkS) (width 0.15))
-  (pad 1 smd rect (at -1.50114 1.85166) (size 1.00076 1.50114) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0 1.85166) (size 1.00076 1.50114) (layers F.Cu F.Paste F.Mask))
-  (pad 3 smd rect (at 1.50114 1.85166) (size 1.00076 1.50114) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0 -1.09982) (size 1.99898 2.99974) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd trapezoid (at 0 0.7493 180) (size 1.50114 0.7493) (rect_delta 0 0.50038 ) (layers F.Cu F.Paste F.Mask))
-  (model TO_SOT_Packages_SMD.3dshapes/SOT89-3_Housing.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 0.3937 0.3937 0.3937))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "SOT89-3"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "SOT89-3, Housing,")
+	(tags "SOT89-3, Housing,")
+	(property "Reference" "REF**"
+		(at -0.09906 -4.24942 0)
+		(layer "F.SilkS")
+		(uuid "0158cad9-bfe4-48dd-b182-c4e9e80ba632")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "AZ1117CH-3.3TRG1"
+		(at -0.20066 4.59994 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0378de77-4eb6-46ae-9b3f-d56ca22ada66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "38ef34f2-c223-4f8b-81de-4c1392f2ae3a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "81154e04-d3f2-4f88-b407-3f98bb868555")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.25044 -1.30048)
+		(end -2.25044 0.50038)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "97afc7c1-7844-494f-95d1-f96aa0b1141d")
+	)
+	(fp_line
+		(start -2.25044 -1.30048)
+		(end -1.6002 -1.30048)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "14272575-a3f2-4661-aed1-e698e81ed65b")
+	)
+	(fp_line
+		(start -1.89992 0.20066)
+		(end -1.651 -0.09906)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "150c6d46-3b35-4d78-acaa-bda72cf4cef1")
+	)
+	(fp_line
+		(start -1.651 -0.09906)
+		(end -1.5494 -0.24892)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3267da0-3c5b-4c02-aab7-1ddb89911ef4")
+	)
+	(fp_line
+		(start -1.5494 -0.24892)
+		(end -1.5494 0.59944)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf3f0ea8-64d8-48af-87ed-88e3d504b319")
+	)
+	(fp_line
+		(start 2.25044 -1.30048)
+		(end 1.6002 -1.30048)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f12aed09-5a97-4f82-9783-7dbf4fb76c99")
+	)
+	(fp_line
+		(start 2.25044 -1.30048)
+		(end 2.25044 0.50038)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "90db5e68-6ca2-4e0d-b896-966f580fb85b")
+	)
+	(pad "1" smd rect
+		(at -1.50114 1.85166)
+		(size 1.00076 1.50114)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3ca5af77-00b5-4264-8787-044333050de5")
+	)
+	(pad "2" smd rect
+		(at 0 -1.09982)
+		(size 1.99898 2.99974)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a1b53fdc-456d-41b0-8e49-cc469d1d7777")
+	)
+	(pad "2" smd trapezoid
+		(at 0 0.7493 180)
+		(size 1.50114 0.7493)
+		(rect_delta 0 0.50038)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2013ff67-0724-4d38-8a1b-5444cdbb7b3f")
+	)
+	(pad "2" smd rect
+		(at 0 1.85166)
+		(size 1.00076 1.50114)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "787b0f60-73c7-4457-ad17-c463ad4b0a2b")
+	)
+	(pad "3" smd rect
+		(at 1.50114 1.85166)
+		(size 1.00076 1.50114)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5f171169-5655-46ef-a652-bed6839d5c39")
+	)
+	(embedded_fonts no)
+	(model "TO_SOT_Packages_SMD.3dshapes/SOT89-3_Housing.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.3937 0.3937 0.3937)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

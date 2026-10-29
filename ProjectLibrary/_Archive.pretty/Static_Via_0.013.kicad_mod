@@ -1,10 +1,64 @@
-(module _Connector:Static_Via_0.013 (layer F.Cu) (tedit 5777CB06)
-  (fp_text reference REF** (at 0.2 -0.9) (layer F.SilkS) hide
-    (effects (font (size 0.508 0.508) (thickness 0.0508)))
-  )
-  (fp_text value "Static Via 0.013" (at 0.1 1) (layer F.Fab) hide
-    (effects (font (size 0.508 0.508) (thickness 0.0508)))
-  )
-  (pad 1 thru_hole circle (at 0 0) (size 0.635 0.635) (drill 0.3302) (layers *.Cu)
-    (zone_connect 2))
+(footprint "Static_Via_0.013"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.2 -0.9 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0b7bc8ba-8b42-4927-9182-203f372ccbd9")
+		(effects
+			(font
+				(size 0.508 0.508)
+				(thickness 0.0508)
+			)
+		)
+	)
+	(property "Value" "Static Via 0.013"
+		(at 0.1 1 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d59e47b-0c20-445c-97fa-cfd851b994f0")
+		(effects
+			(font
+				(size 0.508 0.508)
+				(thickness 0.0508)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e966b21a-769d-4fc3-97c0-766cb0682800")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83241cf8-b47e-4aae-8ab1-392670ed43a0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 0.635 0.635)
+		(drill 0.3302)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "69133639-ff80-4e31-acb6-5b318f5b8e65")
+	)
+	(embedded_fonts no)
 )

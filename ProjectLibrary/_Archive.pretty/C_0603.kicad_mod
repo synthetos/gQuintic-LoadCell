@@ -1,24 +1,139 @@
-(module _Passive:C_0603 (layer F.Cu) (tedit 576A852E)
-  (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
-  (tags "capacitor 0603")
-  (attr smd)
-  (fp_text reference C24 (at 2.2098 0.0508) (layer F.SilkS)
-    (effects (font (size 0.635 0.635) (thickness 0.15)))
-  )
-  (fp_text value "10uF 6.3v" (at 0 1.3 180) (layer F.Fab) hide
-    (effects (font (size 0.508 0.508) (thickness 0.0762)))
-  )
-  (fp_line (start -1.45 -0.75) (end 1.45 -0.75) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1.45 0.75) (end 1.45 0.75) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -1.45 -0.75) (end -1.45 0.75) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 1.45 -0.75) (end 1.45 0.75) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -0.35 -0.6) (end 0.35 -0.6) (layer F.SilkS) (width 0.15))
-  (fp_line (start 0.35 0.6) (end -0.35 0.6) (layer F.SilkS) (width 0.15))
-  (pad 1 smd rect (at -0.75 0) (size 0.8 0.75) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0.75 0) (size 0.8 0.75) (layers F.Cu F.Paste F.Mask))
-  (model Capacitors_SMD.3dshapes/C_0603.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "C_0603"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
+	(tags "capacitor 0603")
+	(property "Reference" "C24"
+		(at 2.2098 0.0508 0)
+		(layer "F.SilkS")
+		(uuid "990806d9-f8e4-44d6-89c8-bc19d83db992")
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "10uF 6.3v"
+		(at 0 1.3 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98f7a8c1-05c5-4bb0-ab10-15415d28052e")
+		(effects
+			(font
+				(size 0.508 0.508)
+				(thickness 0.0762)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "19287617-270a-4351-b9ff-2704e3858b5c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eeb43ab8-ae38-4112-a9fb-63b0d688b76a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.35 -0.6)
+		(end 0.35 -0.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b8c97d58-75cd-451e-a0fc-96655a28cec8")
+	)
+	(fp_line
+		(start 0.35 0.6)
+		(end -0.35 0.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d99d1175-2f88-46d4-bc81-4068bbf7e7d0")
+	)
+	(fp_line
+		(start -1.45 -0.75)
+		(end -1.45 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3fcc0158-0516-4694-8455-9f4ddc6c7a29")
+	)
+	(fp_line
+		(start -1.45 -0.75)
+		(end 1.45 -0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "05084e74-dd7f-41f4-8c19-5c2df1d8de9a")
+	)
+	(fp_line
+		(start -1.45 0.75)
+		(end 1.45 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "981432ea-8bfd-42a1-a01e-fb58744c6f0c")
+	)
+	(fp_line
+		(start 1.45 -0.75)
+		(end 1.45 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "072fc8c5-64c6-40a5-90d7-a517d6937452")
+	)
+	(pad "1" smd rect
+		(at -0.75 0)
+		(size 0.8 0.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f88cf2cf-ddd9-4451-b13e-4f6b5ea557f3")
+	)
+	(pad "2" smd rect
+		(at 0.75 0)
+		(size 0.8 0.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e3a75da1-dae7-45e7-afc8-94864ee1b87b")
+	)
+	(embedded_fonts no)
+	(model "Capacitors_SMD.3dshapes/C_0603.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
