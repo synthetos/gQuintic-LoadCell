@@ -1,0 +1,8 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "_Active") (type "KiCad") (uri "${KIPRJMOD}/ProjectLibrary/_Active.kicad_sym") (options "") (descr ""))
+	(lib (name "_Connector") (type "KiCad") (uri "${KIPRJMOD}/ProjectLibrary/_Connector.kicad_sym") (options "") (descr ""))
+	(lib (name "_Passive") (type "KiCad") (uri "${KIPRJMOD}/ProjectLibrary/_Passive.kicad_sym") (options "") (descr ""))
+	(lib (name "device") (type "KiCad") (uri "${KIPRJMOD}/ProjectLibrary/device.kicad_sym") (options "") (descr ""))
+	(lib (name "power") (type "KiCad") (uri "${KIPRJMOD}/ProjectLibrary/power.kicad_sym") (options "") (descr ""))
+)

@@ -1,0 +1,54 @@
+(kicad_sch
+	(version 20260512)
+	(generator "eeschema")
+	(generator_version "10.99")
+	(uuid "fd8a16ef-2329-477d-a072-1e894c99e615")
+	(paper "USLetter")
+	(title_block
+		(title "gQuintic LoadCell Adapter")
+		(date "4-May-2018")
+		(rev "revA")
+		(company "Synthetos")
+	)
+	(lib_symbols)
+	(sheet
+		(at 52.07 44.45)
+		(size 45.72 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-00005a80852a")
+		(property "Sheetname" "Main Sheet"
+			(at 52.07 43.6114 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LoadCell-Main.kicad_sch"
+			(at 52.07 75.6162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
